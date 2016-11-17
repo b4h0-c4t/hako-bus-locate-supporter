@@ -1,0 +1,11 @@
+{
+  "name": "hako-bus",
+  "version": "1.0.0",
+  "description": "catch hako-bus location times",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "birdgeH",
+  "license": "ISC"
+}
