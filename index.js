@@ -39,6 +39,7 @@ App.on('ready', function(){
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    frame: false,
     x: dispSize.width - 800,
     y: 0,
     show: false
@@ -49,14 +50,17 @@ App.on('ready', function(){
     {label: '乗り場', submenu: [
       {label: '富岡', type: 'radio', sublabel: '154'},
       {label: '未来大学', type: 'radio', sublabel: '165'},
-      {label: '五稜郭公園', type: 'radio', sublabel: '150'}
+      {label: '五稜郭公園', type: 'radio', sublabel: '150'},
+      {label: '函館駅前', type: 'radio', sublabel: '3'}
     ]},
     {label: '降り場', submenu:[
       {label: '富岡', type: 'radio', sublabel: '154'},
       {label: '未来大学', type: 'radio', sublabel: '165'},
-      {label: '五稜郭公園', type: 'radio', sublabel: '150'}
+      {label: '五稜郭公園', type: 'radio', sublabel: '150'},
+      {label: '函館駅前', type: 'radio', sublabel: '3'}
     ]},
     {label: '検索', click: search},
+    {label: '隠す', click: function(){mainWindow.hide();}},
     {label: '終了', accelerator: 'Command+Q', click: function(){app.quit();}}
   ]);
   appIcon.setContextMenu(contextMenu);
